@@ -1,8 +1,7 @@
 import React from 'react';
 import { Routes, Route, Navigate} from 'react-router-dom';
-import {useContext} from "react";
-import userContext from "./userContext";
-import Homepage from "./Homepage";
+import FindProperty from './FindProperty'
+import ListPropertyForm from './ListPropertyForm';
 
 
 /** */
@@ -13,10 +12,11 @@ function RoutesList({ login, signup, update }){
     <div className='RoutesList'>
 
       <Routes>
-        <Route path='/' element={<Homepage /> }></Route>
+        <Route path='/properties' element={<FindProperty /> }></Route>
+        <Route path='/properties/list' element={<ListPropertyForm /> }></Route>
+        <Route path='*' element={<Navigate to='/properties' /> }></Route>
+
       </Routes>
-
-
 
     </div>
 
@@ -24,3 +24,5 @@ function RoutesList({ login, signup, update }){
   )
 
 }
+
+export default RoutesList;
