@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "http://localhost:5001";
 
 class ShareBnbApi {
   // Remember, the backend needs to be authorized with a token

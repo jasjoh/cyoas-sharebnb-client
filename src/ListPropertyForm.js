@@ -65,47 +65,57 @@ function ListPropertyForm() {
 
   return (
     <div className="App">
-      <form className="App-form" onSubmit={ handleSubmit }>
-        <label htmlFor="appForm-title">title</label>
-        <input
-          id="appForm-title"
-          name="title"
-          value={formData.title}
-          onChange={ handleChange }>
-        </input>
+      <form className="App-form" onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="appForm-title">Title:</label>
+          <input
+            id="appForm-title"
+            name="title"
+            value={formData.title}
+            onChange={handleChange}>
+          </input>
+        </div>
+        <div>
+          <label htmlFor="appForm-description">Description:</label>
+          <input
+            id="appForm-description"
+            name="description"
+            value={formData.description}
+            onChange={handleChange}>
+          </input>
+        </div>
 
-        <label htmlFor="appForm-description">description</label>
-        <input
-          id="appForm-description"
-          name="description"
-          value={formData.description}
-          onChange={ handleChange }>
-        </input>
+        <div>
+          <label htmlFor="appForm-pricePerDay">Price Per Day:</label>
+          <input
+            id="appForm-pricePerDay"
+            name="pricePerDay"
+            value={formData.pricePerDay}
+            onChange={handleChange}>
+          </input>
+        </div>
 
-        <label htmlFor="appForm-pricePerDay">pricePerDay</label>
-        <input
-          id="appForm-pricePerDay"
-          name="pricePerDay"
-          value={formData.pricePerDay}
-          onChange={ handleChange }>
-        </input>
+        <div>
+          <label htmlFor="appForm-photoPrimaryName">Photo Name:</label>
+          <input
+            id="appForm-photoPrimaryName"
+            name="photoPrimaryName"
+            value={formData.photoPrimaryName}
+            onChange={handleChange}>
+          </input>
+        </div>
 
-        <label htmlFor="appForm-photoPrimaryName">photoPrimaryName</label>
-        <input
-          id="appForm-photoPrimaryName"
-          name="photoPrimaryName"
-          value={formData.photoPrimaryName}
-          onChange={ handleChange }>
-        </input>
+        <div>
+          <label htmlFor="appForm-photoPrimaryFile">Photo File:</label>
+          <input
+            id="appForm-photoPrimaryFile"
+            name="photoPrimaryFile"
+            type="file"
+            value={formData.photoPrimaryFileName}
+            onChange={handleChange}>
+          </input>
+        </div>
 
-        <label htmlFor="appForm-photoPrimaryFile">photoPrimaryFile</label>
-        <input
-          id="appForm-photoPrimaryFile"
-          name="photoPrimaryFile"
-          type="file"
-          value={formData.photoPrimaryFileName}
-          onChange={ handleChange }>
-        </input>
         <button className="AppForm-btn">List Property</button>
       </form>
     </div>
