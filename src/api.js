@@ -1,11 +1,6 @@
 import axios from "axios";
 
-
-
-const BASE_URL = "http://localhost:3000";
-
-
-
+const BASE_URL = "http://localhost:5000";
 
 class ShareBnbApi {
   // Remember, the backend needs to be authorized with a token
@@ -45,8 +40,8 @@ class ShareBnbApi {
   /** Get a list of all listings*/
   static async getAllListings() {
     const data = await this.request(`properties`);
+    console.log("retrieved properties:", data);
     return data.properties;
-
   }
 
   /** Create a listing */

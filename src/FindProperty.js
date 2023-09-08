@@ -7,10 +7,10 @@ function FindProperty(){
   const [listings, setListings] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
-
   useEffect(function fetchListingsOnMount(){
     async function fetchListings(){
       const listings = await ShareBnbApi.getAllListings();
+      console.log("retrieved listings:", listings);
       setListings(listings);
       setIsLoading(false);
     }
