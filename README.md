@@ -8,9 +8,10 @@ In this case, we opted to choose React for our front-end in order to gain more e
 [Link to backend repo.](https://github.com/jasjoh/cyoas-sharebnb-server)
 
 ## Key Learnings
+- The need to explicitly type image uploads sent from React forms alongside JSON data to Flask APIs as multipart form data
 - How to provision a new AWS account and S3 instance including IAM and policy management
 - How challenging it is as an AWS novice to navigate their documentation as part of the above bullet point
-- The challenges of time estimation and planning with working under fixed time constraintsl 
+- The challenges of time estimation and planning with working under fixed time constraints
 
 ## How to Run
 - Run `npm install` to install pre-requisites
